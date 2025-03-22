@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physiotherapy</title>
+    <link rel="stylesheet" href="display.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lucy's Physiotherapy <br />Clinic</h1>
+      <nav id="headerElements">
+        <li class="arrangeElements"><a href="">Home</a></li>
+        <li class="arrangeElements"><a href="">Jobs</a></li>
+        <li class="arrangeElements"><a href="">Adresse</a></li>
+        <li class="arrangeElements"><a href="">Impressum</a></li>
+      </nav>
+    </header>
+    <h1 id="welcome">Herzlich Wilkommen</h1>
+    <!--info about the Praxis-->
+    <div id="content">
+      <div id="middleContent">
+        <h1>About Us</h1>
+        <p>
+          Your health is our top priority! Lucy’s is your ideal clinic for
+          physiotherapy and exercise with quality, commitment and individuality.
+          Our team of highly skilled professionals offer specialized services in
+          manual, neurological, sports and geriatric physiotherapy. We always
+          plan your physiotherapy treatment according to the doctor's
+          prescription or an earlier consultation tailored to your needs and
+          physical demands. We recognise both private and statutory health
+          insurance prescriptions and also do house visits. Come by and visit
+          our modern rooms. We look forward to welcoming you!
+        </p>
+      </div>
+      <!--appointment booking form-->
+      <div id="appointmentForm">
+        <form action="" id="hiddenBooking">
+          <h2>Book or Cancel Appointment here</h2>
+          <div class="formElements">
+            <label for="fname">Firstname</label><br />
+            <input type="text" id="fname" class="inputSize" />
+          </div>
+          <div class="formElements">
+            <label for="lname">Lastname</label><br />
+            <input type="text" id="lname" class="inputSize" />
+          </div>
+          <div class="formElements">
+            <label for="email">Email</label><br />
+            <input type="text" id="email" class="inputSize" />
+          </div>
+          <div class="formElements">
+            <label for="date">Date</label><br />
+            <input type="date" id="dateInput" />
+            <input type="time" id="timeInput" />
+          </div>
+          <!--setting availale times-->
+          <div id="available-times">
+            <label for="timeSelect">Available Times:</label><br />
+            <select id="timeSelect" disabled>
+              <option value="">Select a time</option>
+            </select>
+          </div>
+          
+          <div  id="submit">
+           <div >
+            <input id="submitBook" type="submit" value="Book" disabled />
+           </div>
+           <div id="submitCancel"></div>
+            <input type="submit" value="Cancel" />
+           </div>
+          </div>
+        <div id="bookingMessage" class="success"></div>
+        </form>
+      </div>
+    </div>
+    <!--therapy types graphical information-->
+    <div id="therapyTypes">
+      <img src="images/wmb.jpg" alt="" />
+      <img src="images/moms.jpg" alt="" />
+      <img src="images/mml.jpg" alt="" />
+      <img src="images/mmk.jpg" alt="" />
+    </div>
+    <footer><div class="login-link">
+      <p>Are you a therapist? <a href="secretary.html">Login here</a></p>
+    </div>
+  </div></footer>  
+    </script> <script src="page.js"></script></body>
+</html>
