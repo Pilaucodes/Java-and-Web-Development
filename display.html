@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Physiotherapy</title>
     <link rel="stylesheet" href="display.css" />
+    <!-- review the font i downloaded and accidentally deleted-->
   </head>
   <body>
     <header>
+      <!--functionality and outline to be updated-->
       <h1>Lucy's Physiotherapy <br />Clinic</h1>
       <nav id="headerElements">
         <li class="arrangeElements"><a href="">Home</a></li>
@@ -17,7 +19,6 @@
       </nav>
     </header>
     <h1 id="welcome">Herzlich Wilkommen</h1>
-    <!--info about the Praxis-->
     <div id="content">
       <div id="middleContent">
         <h1>About Us</h1>
@@ -33,9 +34,9 @@
           our modern rooms. We look forward to welcoming you!
         </p>
       </div>
-      <!--appointment booking form-->
+      <!--booking and cancellation-->
       <div id="appointmentForm">
-        <form action="" id="hiddenBooking">
+        <form id="hiddenBooking">
           <h2>Book or Cancel Appointment here</h2>
           <div class="formElements">
             <label for="fname">Firstname</label><br />
@@ -48,40 +49,59 @@
           <div class="formElements">
             <label for="email">Email</label><br />
             <input type="text" id="email" class="inputSize" />
+            <div id="emailError" class="error"></div>
           </div>
           <div class="formElements">
             <label for="date">Date</label><br />
             <input type="date" id="dateInput" />
           </div>
-          <!--setting availale times-->
           <div id="available-times">
             <label for="timeSelect">Available Times:</label><br />
             <select id="timeSelect" disabled>
               <option value="">Select a time</option>
             </select>
           </div>
-          
-          <div  id="submit">
-           <div >
-            <input id="submitBook" type="submit" value="Book" disabled />
-           </div>
-           <div id="submitCancel"></div>
-            <input type="submit" value="Cancel" />
-           </div>
+          <div id="submit">
+            <input id="submitBook" type="button" value="Book" disabled />
+            <input id="submitCancel" type="button" value="Cancel" />
           </div>
-        <div id="bookingMessage" class="success"></div>
+          <div id="bookingMessage" class="success"></div>
         </form>
       </div>
     </div>
-    <!--therapy types graphical information-->
+    <!--therapy types images and information-->
     <div id="therapyTypes">
-      <img src="images/wmb.jpg" alt="" />
-      <img src="images/moms.jpg" alt="" />
-      <img src="images/mml.jpg" alt="" />
-      <img src="images/mmk.jpg" alt="" />
+      <div>
+        <img src="images/wmb.jpg" alt="" />
+        <div class="image1">
+          <p>I'll add information later</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/moms.jpg" alt="" />
+        <div class="image2">
+          <p>I'll add information later</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/mml.jpg" alt="" />
+        <div class="image3">
+          <p>I'll add information later</p>
+        </div>
+      </div>
+      <div>
+        <img src="images/mmk.jpg" alt="" />
+        <div class="image 4">
+          <p>I'll add information later</p>
+        </div>
+      </div>
     </div>
-    <footer><div class="login-link">
-      <p>Are you a therapist? <a href="secretary.html">Login here</a></p>
-    </div></footer>  
-    </script> <script src="page.js"></script></body>
+    <footer>
+      <!--i still have to edit this later with the information from some of the links at the header-->
+      <div class="login-link">
+        <p>Are you a therapist? <a href="secretary.html">Login here</a></p>
+      </div>
+    </footer>
+    <script src="page.js"></script>
+  </body>
 </html>
