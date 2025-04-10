@@ -106,3 +106,28 @@ body{
     border-radius: 16px;
  
 }
+.imageContainer {
+    position: relative;
+    display: inline-block;
+}
+
+.image {
+    display: none; 
+    position: absolute;
+    left: 61%; 
+    top: 50%; 
+    bottom: -48%;
+    transform: translateY(-49%); 
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.imageContainer:hover .image {
+    display: block; 
+}
+
