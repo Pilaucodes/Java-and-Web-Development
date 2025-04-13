@@ -83,8 +83,7 @@ bookAppointmentButton.addEventListener("click", function () {
         alert("Please fill in all fields before booking.");
         return;
     }
-   /*validating email.. kinda not perfect.. tested it with a nonexistent email that 
-   follows email conventions and the booking was made*/
+   //validating email.. 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       emailErrorMessage.textContent = "Please enter a valid email address.";

@@ -27,7 +27,7 @@ db.connect(err => {
 });
 
 // nodemailer
-const transporterService = nodemailer.createTransport({
+const transportEmailMessage = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
@@ -49,14 +49,14 @@ app.post('/book', (req, res) => {
         }
         
         // Send confirmation email
-        const mail = {
+        const mailToBeSent = {
             from: 'therapistapp25@gmail.com',
             to: email,
             subject: 'Booking Confirmation and Remainder',
             text: `Dear ${fname} ${lname},\n\nYour appointment has been booked successfully. Here are the details for remainder to your appointment!\n\nDate: ${date}\nTime: ${time}\n\nSee you soon!`
         };
 
-        transporterService.sendMail(mail, (error, info) => {
+        transportEmailMessage.sendMail(mailToBeSent, (error, info) => {
             if (error) {
                 console.error('Error sending email:', error);
                 return res.status(500).send('Booking successful, but failed to send confirmation email.');
